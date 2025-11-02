@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - Lets learnt it</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Form to apply for web course</h1>
+    <form action="post">
+
+        <div>
+            <label for="username">Enter Your Username: </label>
+            <input type="text" placeholder="Username" id="username" required>
+        </div>
+
+        <div>
+            <label for="passward">Password:</label>
+            <input type="password" name="passward" id="passward" placeholder="Password" maxlength="8" minlength="4"
+                required>
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+        </div>
+
+        <div>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+        </div>
+
+        <div>
+            <label for="phone">Mobile Number:</label>
+            <input type="tel" id="phone" required maxlength="10">
+        </div>
+
+        <div>
+            <input type="checkbox" name="subscribe" id="subscribe">
+            <label for="subscribe">subscribe my youtube channel.</label>
+        </div>
+
+        <div>
+            <label for="comment">Enter your comment</label>
+            <br>
+            <textarea name="comment" id="comment" rows="4" cols="50"></textarea>
+        </div>
+
+        <div>
+            <label for="select">Select Fav fruit:</label>
+            <select name="fruits" id="select">
+                <option value="fruits">Apple</option>
+                <option value="fruits">Mango</option>
+                <option value="fruits">Banana</option>
+            </select>
+        </div>
+    </form>
+    <hr>
+
+    <h1>User submission form</h1>
+    <form id="user">
+        <div>
+            <span>
+                <label for="name">Enter your name: </label>
+                <input type="text" id="name">
+            </span>
+        </div>
+
+        <div>
+            <span>
+                <label for="city">Enter your City: </label>
+                <input type="text" id="city">
+            </span>
+        </div>
+
+        <div>
+            <span>
+                <label for="pincode">Pincode: </label>
+                <input type="tel" id="pincode">
+            </span>
+        </div>
+
+        <div>
+            <button type="submit">Sumbit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+
+</html>
