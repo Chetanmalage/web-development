@@ -1,0 +1,16 @@
+.tahoma-font{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.arial-font{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sales-line{
+    color: rgb(253, 76, 105);
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin-top: 0px;
+
+}
