@@ -1,0 +1,32 @@
+.head {
+    font-family: Arial;
+}
+
+.input-text {
+    font-family: arial;
+    background-color: rgb(233, 231, 231);
+    display: block;
+    margin-bottom: 5px;
+    color: black;
+    width: 300px;
+    height: 30px;
+    padding-left: 15px;
+    border: none;
+}
+
+.reuest-button {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    width: 110px;
+    height: 40px;
+    border: none;
+}
+
+.schedule-button {
+    background-color: rgb(233, 231, 231);
+    border: none;
+    height: 40px;
+    width: 150px;
+    margin-left: 15px;
+}
