@@ -1,6 +1,6 @@
 .main-div {
     width: 500px;
-    display: inline-block;
+    display: block;
     padding: 15px;
     border: 1px solid rgb(230, 230, 230);
     border-radius: 10px;
