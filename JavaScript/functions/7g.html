@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7g</title>
+</head>
+
+<body>
+    <script>
+        function convertLength(length, from, to) {
+            let result;
+            if (from === 'km' && to === 'km') {
+                result = length;
+                console.log(`${result} km`);
+
+            } else if (from === 'miles' && to === 'miles') {
+                result = length;
+                console.log(`${result} miles`);
+
+            } else if (from === 'miles') {
+                result = length * 1.6;
+                console.log(`${result} km`);
+
+            } else if (from === 'km') {
+                result = length / 1.6;
+                console.log(`${result} miles`);
+            }
+        }
+
+        convertLength(50, 'miles', 'km');
+        convertLength(32, 'km', 'miles');
+        convertLength(50, 'km', 'km');
+    </script>
+
+</body>
+
+</html>
