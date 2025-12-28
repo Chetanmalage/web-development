@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9c</title>
+</head>
+
+<body>
+    <button onclick="
+    result('heads');
+    ">heads</button>
+
+    <button onclick="
+    result('tails');
+    ">tails</button>
+    <p class="js-display-button"></p>
+
+
+    <script>
+        function result(value) {
+            if (value === 'heads') {
+                document.querySelector('.js-display-button').innerHTML = `You Chose: ${value}`;
+            } else if (value === 'tails') {
+                document.querySelector('.js-display-button').innerHTML = `You Chose: ${value}`;
+            }
+        }
+
+    </script>
+</body>
+
+</html>
