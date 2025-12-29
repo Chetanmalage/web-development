@@ -4,14 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart Quantity</title>
+    <title>Todo add cart in quantity</title>
 </head>
 
 <body>
     <button onclick=" 
     console.log(`Cart quantity: ${cartQuantity}`);
     ">Show Quantity</button>
-    <br><br>
 
     <button onclick="
     updateCartQuantity(1);
@@ -34,6 +33,7 @@
     ">+5</button>
 
     <br><br>
+
     <button onclick="
     updateCartQuantity(-1);
     ">Remove from cart</button>
@@ -45,11 +45,13 @@
     <button onclick="
     updateCartQuantity(-3);
     ">-3</button>
-    <br><br>
+
+    <p class="js-show-quantity">Cart quantity: 0</p>
+
     <button onclick="
-    console.log('Cart was reset.');
     cartQuantity = 0;
-    console.log(`Cart quantity: ${cartQuantity}`);
+    document.querySelector('.js-show-quantity')
+                .innerHTML = `Cart quantity: ${cartQuantity}`;
     ">Reset Cart</button>
 
     <script>
@@ -67,8 +69,14 @@
                 return;
             }
 
-            cartQuantity += value
-            console.log(`Cart quantity: ${cartQuantity}`);
+            cartQuantity += value;
+
+
+            let showQuantity = document.querySelector('.js-show-quantity');
+
+            document.querySelector('.js-show-quantity')
+                .innerHTML = `Cart quantity: ${cartQuantity}`;
+
         }
 
     </script>
