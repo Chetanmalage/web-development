@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10e</title>
+
+    <style>
+        .toggle-button {
+            background-color: rgb(230, 230, 230);
+            font-size: 15px;
+            padding: 10px 15px;
+            margin-right: 10px;
+            font-family: arial;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .is-toggled {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="js-button toggle-button" onclick="
+    let gamingButton = document.querySelector('.js-button');
+    if (!gamingButton.classList.contains('is-toggled')) {
+        gamingButton.classList.add('is-toggled');
+    } else {
+        gamingButton.classList.remove('is-toggled');
+    }
+    ">Gaming</button>
+
+    <button class="js-button-2 toggle-button" onclick="
+    gamingButton = document.querySelector('.js-button-2');
+    if (!gamingButton.classList.contains('is-toggled')) {
+        gamingButton.classList.add('is-toggled');
+    } else {
+        gamingButton.classList.remove('is-toggled');
+    }
+    ">Music</button>
+
+    <button class="js-button-3 toggle-button" onclick="
+
+    gamingButton = document.querySelector('.js-button-3');
+    if (!gamingButton.classList.contains('is-toggled')) {
+        gamingButton.classList.add('is-toggled');
+    } else {
+        gamingButton.classList.remove('is-toggled');
+    }
+    ">Tech</button>
+
+
+</body>
+
+</html>
